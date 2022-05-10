@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Roboto:ital@1&family=Sofia&family=Trocchi&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <header class="encabezado">
+            <h1><img src="img/logo-alura.png" class="logo-alura"></h1>
+        </header>
+<!-- El contenedor Primario -->
+        <section class="">
+            <article class="contenedorPrimario">
+                <div>
+                    <p>ENCRIPTAR</p>
+                    <textarea type="text" class="input-text" placeholder="Ingresa el texto aqui" cols="40" rows="6"></textarea>
+                <h6><img src="./img/advertencia.png" alt="advertencia"> Solo Letras minúsculas y sin acentos.</h6>
+                <!-- Contenedor de Botones de Encriptar y Desencriptar -->
+                    <button class="boton-encriptado" type="button" onclick="btnencriptar()">Encriptar</button>
+                    <button class="boton-desencriptado" type="button" onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+            </article>
+<!-- El contenedor Secundario -->
+<article class="contenedorSecundario">
+    <aside>
+        <div> <p>ENCRIPTADO</p>  <textarea id="output" type="text" class="input-text-area" cols="18" rows="8" placeholder="Ningun Mensaje fue encontrado"></textarea> 
+        </div>
+            <img src="./img/Muñeco.png" alt="Muñeco">
+    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    </aside>
+<!-- Boton Copiar -->
+    <aside>
+        <button class="boton-copiar" onclick="Copiar()">Copiar Resultado</button>
+    </aside>
+    <p class="copyright"> Alura LATAM <br>
+        Robles Altamirano Cesar Ivan
+    <a href="https://github.com/IvanRoblex"><img src="img/github.png" alt="github" class="logo-social" >
+    <a href="https://www.linkedin.com/in/cesar-ivan-robles-altamirano-3a52391ab/"><img src="img/linkedin.png" alt="linkedin" class="logo-social"></a></p>
+</article>
+        </section>
+    </main>
+</body>
+<script src="./JS/main.js"></script>
+</html>
